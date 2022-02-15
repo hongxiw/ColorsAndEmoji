@@ -1,7 +1,6 @@
 // credit to Mr. Das for the code used in this example!
 
-public class Caterpillar
-{
+public class Caterpillar {
     // constants: these are "unicode" characters that
     // each represent a color!
     private final String BLUE = "\u001B[36m";
@@ -20,13 +19,11 @@ public class Caterpillar
     private String name;
 
     // constructor
-    public Caterpillar(String name)
-    {
+    public Caterpillar(String name) {
         this.name = name;
     }
 
-    public void introduce()
-    {
+    public void introduce() {
         // adding color to the console
         // note how you append a color string to change its color
         System.out.println(CYAN + "Hello," + RED + " my name is " + BROWN + name);
@@ -34,8 +31,7 @@ public class Caterpillar
         System.out.println(WHITE + "Cool huh?");
     }
 
-    public void printFavoriteFoods()
-    {
+    public void printFavoriteFoods() {
         // search for emoji icons here:  https://www.fileformat.info/info/unicode/char/search.htm
         // when you find one you like, scroll down to "C/C++/Java source code" and copy/paste that string
         System.out.println("Pineapple: \uD83C\uDF4D");
@@ -47,8 +43,7 @@ public class Caterpillar
     // this method "throws exceptions" which is an
     // advanced topic you don't need to know for this course, but for more info
     // check out: https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
-    public void animate() throws InterruptedException
-    {
+    public void animate() throws InterruptedException {
         // helper method defined below
         System.out.print(RED);
         System.out.println("                  \\_/-.--.--.--.--.--.");
